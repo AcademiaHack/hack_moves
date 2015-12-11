@@ -1,5 +1,6 @@
 var Game = (function() {
   var instance = undefined;
+  var self = this;
   function Game ($game, miniGames) {
     this.$game = $game;
     this.miniGames = miniGames;
@@ -19,7 +20,7 @@ var Game = (function() {
     this.miniGames[0].start();
   };
   return {getInstance: function($game, miniGames){
-    if !instance {
+    if(!instance) {
       instance = new Game($game, miniGames);
     }
     return instance

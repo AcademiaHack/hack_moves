@@ -1,0 +1,24 @@
+$bar-height: 50px;
+
+.bar {
+  position: fixed;
+  width: 100%;
+  padding: 8px;
+  left: 0px;
+  height: $bar-height;
+  background-color: white;
+}
+
+.life-header {
+  top: 0px;
+}
+
+.time-footer {
+  bottom: 0px;
+}
+
+.mini-game {
+  width: 100%;
+  margin-top: $bar-height;
+  margin-bottom: $bar-height;
+}

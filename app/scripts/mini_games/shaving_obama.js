@@ -5,10 +5,20 @@ function ShavingObama () {
   this.duration = 10;
 };
 
+ShavingObama.prototype.init = function() {
+  console.log("Iniciando ShavingObama");
+};
+
 ShavingObama.prototype.draw = function() {
-  console.log("Pintando ShavingObama");
+  //console.log("Pintando ShavingObama");
+  MiniGame.prototype.draw.call(this);
+  
 };
 
 ShavingObama.prototype.data = function() {
-  console.log("calculando ShavingObama")
+  //console.log("calculando ShavingObama")
+};
+
+ShavingObama.prototype.end = function() {
+  console.log("Terminando ShavingObama");
 };

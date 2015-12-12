@@ -1,3 +1,3 @@
 function Player () {
-  this.lives = "3"
+  this.lifes = "3"
 };

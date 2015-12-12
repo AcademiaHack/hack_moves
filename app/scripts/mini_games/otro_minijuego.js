@@ -1,12 +1,14 @@
 OtroMinijuego.prototype = new MiniGame();
 OtroMinijuego.prototype.constructor = OtroMinijuego;
 
-function OtroMinijuego () {
+function OtroMinijuego(player) {
+  this.player = player;
   this.duration = 10;
 };
 
 OtroMinijuego.prototype.init = function() {
   console.log("Iniciando OtroMinijuego");
+  this.$game.find('.mini-game').html("OtroMinijuego GAME!");
 };
 
 OtroMinijuego.prototype.draw = function() {
@@ -15,6 +17,7 @@ OtroMinijuego.prototype.draw = function() {
 };
 
 OtroMinijuego.prototype.data = function() {
+  MiniGame.prototype.data.call(this);
   //console.log("calculando OtroMinijuego")
 };
 

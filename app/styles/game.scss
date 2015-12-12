@@ -22,3 +22,20 @@ $bar-height: 50px;
   margin-top: $bar-height;
   margin-bottom: $bar-height;
 }
+
+.face {
+  width: 287px;
+  height: 380px;
+  margin-left: 50px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.hair {
+  position: absolute;
+  width: 331px;
+  height: 310px;
+  left: 23px;
+  top: 213px;
+  background-color: red;
+}
